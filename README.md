@@ -42,11 +42,11 @@ Invite the bot to the dev server whit `DevGuildID` id using the `bot` scope.
 
 ### 3 setup slash commands
 
-run [setupcommands.js](./setupcommands.js) (`node setupcommands.js`)
+run [setupcommands.js](./src/setupcommands.js) (`node src/setupcommands.js`)
 if you check now on the dev guild all commands would be visible, if not wait.
 ### 4 run the bot 
 
-run `node index.js`
+run `node src/index.js`
 
 
 "# Fumo-bot" 
