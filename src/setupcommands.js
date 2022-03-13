@@ -1,7 +1,7 @@
 const {Client} = require("discord.js")
 const client = new Client({intents: 12345});
 client.on("ready", async _ => {
-console.log("ready")
+console.log("Client ready")
     const data = [
         {
             name: "ping",
@@ -47,7 +47,7 @@ console.log("ready")
     const command = await client.application?.commands.set(data);
     console.log(command);
     const guild = await client.guilds.cache.get(process.env.DevGuildID)
-    guild.commands.create({
+    await guild.commands.create({
         "name": "addfumo",
         "description": "add a fumo to the database",
         "options": [
@@ -66,6 +66,7 @@ console.log("ready")
         ]
     }
     )
+    console.log("Commands successfully deployed")
     
 })
 client.login(process.env.BotToken)

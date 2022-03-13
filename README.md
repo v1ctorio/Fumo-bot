@@ -42,11 +42,10 @@ Invite the bot to the dev server whit `DevGuildID` id using the `bot` scope.
 
 ### 3 setup slash commands
 
-run [setupcommands.js](./src/setupcommands.js) (`node src/setupcommands.js`)
+run [setupcommands.js](./src/setupcommands.js) (`yarn build`)
 if you check now on the dev guild all commands would be visible, if not wait.
 ### 4 run the bot 
 
-run `node src/index.js`
+run `yarn start`
 
 
-"# Fumo-bot" 

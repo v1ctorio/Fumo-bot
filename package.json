@@ -9,5 +9,10 @@
     "dotenv": "^10.0.0",
     "mongoose": "^5.13.7",
     "node-fetch": "^2.6.1"
+  },
+  "scripts":{
+    "start": "node src/index.js",
+    "build":"node src/setupcommands.js",
+    "dev":"yarn run build && yarn start"
   }
 }
