@@ -1,5 +1,6 @@
 const {Client} = require("discord.js")
 const client = new Client({intents: 12345});
+require("dotenv").config()
 client.on("ready", async _ => {
 console.log("Client ready")
     const data = [
